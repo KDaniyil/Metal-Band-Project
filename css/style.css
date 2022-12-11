@@ -1,0 +1,213 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+*{
+    box-sizing: border-box;
+}
+a{
+    color: #eee;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #eee;
+    background-color: #383838;
+    background-image: url("../img/bg/bg.png");
+    font-size: 16px;
+}
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+h1, h2, h3, .menu a, .btn-style{
+    text-transform: uppercase;
+}
+.section-title{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.btn-style{
+    color: #eee;
+    background: linear-gradient(145deg, #dd0000, #ff3670);
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    transition: all .3s ease;
+}
+.btn-style:hover{
+    background: linear-gradient(145deg, #ff3670, #dd0000);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.row{
+    display: flex;
+    margin: 0 -10px;
+    flex-wrap: wrap;
+}
+/* Header */
+
+header{
+    background: url("../img/bg/bg-01.jpg") center / cover no-repeat #666;
+    padding: 150px 0 50px 0;
+    min-height: 480px;
+}
+.topmenu{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+}
+.menu a{
+    display: block;
+    padding:0 20px ;
+    line-height: 60px;
+    transition: all .3s ease;
+}
+.menu a:hover {
+    background-color: rgba(243, 36, 74, 0.7);
+    transition: all .3s ease;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro-title{
+    font-family: 'Metal Mania', cursive;
+    font-size: 90px;
+    color: #fafafa;
+}
+.intro-btn{
+    margin-top: 60px;
+    width: 100%;
+    max-width: 320px;
+    padding: 20px 0;
+}
+
+/* Tour */
+.tour-card{
+    background: #666 center / cover no-repeat;
+    flex: 0 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 40px 10px 20px;
+    box-shadow: 0px 3px 3px 0px #212121;
+    background-blend-mode: multiply;
+}
+.tour-card-title, .tour-card-place{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.tour-card-place{
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.tour-card-place::before{
+    content: url("../img/icons/location_icon.png");
+    filter: invert(1);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+.tour-card-data{
+    font-size: 14px;
+    font-style: italic;
+}
+.tour-card-btn{
+    align-self: center;
+    max-width: 155px;
+    padding: 10px;
+}
+
+/* Gallery */
+.picture{
+    flex: 0 1 33.3333%;
+    max-width: 33.3333%;
+    padding: 10px;
+}
+.picture img{
+    box-shadow: 0px 3px 3px 0px #212121;
+}
+.picture:hover{
+    opacity: 0.3;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+/* Subscribe */
+.subscribe{
+    background: #666 url("../img/bg/bg-02.jpg") center / cover no-repeat;
+    background-blend-mode: multiply;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    margin-top: 40px;
+}
+.subscribe-txt{
+    text-align: center;
+    line-height: 25.6px;
+}
+.subscribe-form{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-form input{
+    border: 0;
+    height: 40px;
+    font-size: 1.2em;
+    background-color: #fafafa;
+    padding-left: 10px;
+    margin-right: 5px;
+}
+.btn-subscribe{
+    align-items: center;
+    margin: 0;
+    height: 40px;
+    padding: 0 20px;
+}
+
+
+/* Footer */
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #222;
+    background-image: url(../img/bg.png);
+    text-align: center;
+}
+footer .socials {
+    margin-bottom: 20px;
+}
+.socials a{
+    margin-right: 10px;
+    filter: invert(1);
+    transition: all .3s ease;
+}
+.socials a:hover{
+    opacity: 0.3;
+    filter: blur(10);
+    transition: all .3s ease;
+}
